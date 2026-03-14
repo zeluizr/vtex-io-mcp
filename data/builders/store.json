@@ -1,0 +1,83 @@
+{
+  "name": "store",
+  "version": "0.x",
+  "description": "Defines the storefront blocks, interfaces, routes, and templates. The store builder is the heart of any Store Framework theme.",
+  "folder": "/store",
+  "requiredFiles": [
+    {
+      "path": "store/blocks.jsonc",
+      "description": "Main blocks definition file. Declares all custom block configurations and page templates."
+    }
+  ],
+  "optionalFiles": [
+    {
+      "path": "store/blocks/",
+      "description": "Folder to split blocks into multiple files (imported automatically)"
+    },
+    {
+      "path": "store/interfaces.json",
+      "description": "Custom block interfaces — declares new block types that React components implement"
+    },
+    {
+      "path": "store/routes.json",
+      "description": "Custom page routes mapping paths to template blocks"
+    },
+    {
+      "path": "store/contentSchemas.json",
+      "description": "Site Editor CMS schemas for editable block content"
+    }
+  ],
+  "keyPackages": [],
+  "blocksJsoncSchema": {
+    "description": "blocks.jsonc is the main configuration file. It maps block names to their children, props, and content.",
+    "structure": {
+      "store.home": "Home page template — children are the blocks rendered on the home",
+      "store.product": "Product Detail Page (PDP) template",
+      "store.search": "Search/PLP page template",
+      "store.custom#path": "Custom page template matched by route",
+      "header.full": "Store header block",
+      "footer.layout": "Store footer block"
+    },
+    "blockNaming": "Blocks follow the pattern: blockType#uniqueId. Example: flex-layout.row#hero-row"
+  },
+  "interfacesSchema": {
+    "description": "interfaces.json declares custom block types implemented by React components",
+    "example": {
+      "my-custom-block": {
+        "component": "MyCustomBlock",
+        "composition": "blocks",
+        "allowed": ["rich-text", "image"]
+      }
+    }
+  },
+  "routesSchema": {
+    "description": "routes.json maps URL paths to page templates",
+    "example": {
+      "store.custom#about": {
+        "path": "/about"
+      }
+    }
+  },
+  "examples": {
+    "minimalBlocksJsonc": {
+      "store.home": {
+        "blocks": ["rich-text#home-title", "shelf#home-shelf"]
+      },
+      "rich-text#home-title": {
+        "props": {
+          "text": "# Welcome to Our Store",
+          "textPosition": "CENTER"
+        }
+      },
+      "shelf#home-shelf": {
+        "blocks": ["product-summary.shelf"],
+        "props": {
+          "category": 1,
+          "maxItems": 10
+        }
+      }
+    }
+  },
+  "relatedBuilders": ["react", "styles", "messages"],
+  "documentation": "https://developers.vtex.com/docs/guides/vtex-io-documentation-store-builder"
+}

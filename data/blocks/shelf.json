@@ -1,0 +1,135 @@
+{
+  "blockName": "shelf",
+  "app": "vtex.shelf",
+  "version": "1.x",
+  "description": "Displays a horizontal shelf (carousel) of products fetched from a collection, category, or search query",
+  "category": "product",
+  "props": [
+    {
+      "name": "category",
+      "type": "number",
+      "description": "Category ID to fetch products from",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "collection",
+      "type": "number",
+      "description": "Collection ID to fetch products from",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "orderBy",
+      "type": "enum",
+      "description": "Sort order for products",
+      "required": false,
+      "default": "OrderByTopSaleDESC",
+      "enum": [
+        "OrderByTopSaleDESC",
+        "OrderByReleaseDateDESC",
+        "OrderByBestDiscountDESC",
+        "OrderByPriceDESC",
+        "OrderByPriceASC",
+        "OrderByNameASC",
+        "OrderByNameDESC"
+      ]
+    },
+    {
+      "name": "maxItems",
+      "type": "number",
+      "description": "Maximum number of products to display",
+      "required": false,
+      "default": 10
+    },
+    {
+      "name": "minItemsPerPage",
+      "type": "number",
+      "description": "Minimum number of items visible per page (desktop)",
+      "required": false,
+      "default": 1
+    },
+    {
+      "name": "itemsPerPage",
+      "type": "number",
+      "description": "Number of items visible per page (desktop)",
+      "required": false,
+      "default": 5
+    },
+    {
+      "name": "scroll",
+      "type": "enum",
+      "description": "Scroll/animation behavior",
+      "required": false,
+      "default": "BY_PAGE",
+      "enum": ["BY_PAGE", "ONE_BY_ONE"]
+    },
+    {
+      "name": "arrows",
+      "type": "boolean",
+      "description": "Whether to display navigation arrows",
+      "required": false,
+      "default": true
+    },
+    {
+      "name": "showTitle",
+      "type": "boolean",
+      "description": "Whether to show the shelf title",
+      "required": false,
+      "default": true
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Shelf title text",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "paginationDotsVisibility",
+      "type": "enum",
+      "description": "When to show pagination dots",
+      "required": false,
+      "default": "visible",
+      "enum": ["visible", "hidden", "desktopOnly", "mobileOnly"]
+    }
+  ],
+  "allowedChildren": ["product-summary.shelf"],
+  "interface": {
+    "component": "Shelf",
+    "composition": "blocks"
+  },
+  "examples": [
+    {
+      "description": "Best sellers shelf from category 1",
+      "code": {
+        "shelf#home": {
+          "blocks": ["product-summary.shelf"],
+          "props": {
+            "category": 1,
+            "orderBy": "OrderByTopSaleDESC",
+            "maxItems": 10,
+            "itemsPerPage": 4,
+            "title": "Best Sellers"
+          }
+        }
+      }
+    },
+    {
+      "description": "New arrivals from collection",
+      "code": {
+        "shelf#new-arrivals": {
+          "blocks": ["product-summary.shelf"],
+          "props": {
+            "collection": 142,
+            "orderBy": "OrderByReleaseDateDESC",
+            "maxItems": 8,
+            "itemsPerPage": 4,
+            "title": "New Arrivals"
+          }
+        }
+      }
+    }
+  ],
+  "documentation": "https://developers.vtex.com/docs/apps/vtex.shelf"
+}

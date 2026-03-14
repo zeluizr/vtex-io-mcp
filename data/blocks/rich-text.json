@@ -1,0 +1,87 @@
+{
+  "blockName": "rich-text",
+  "app": "vtex.rich-text",
+  "version": "0.x",
+  "description": "Renders text content using Markdown syntax, supporting headings, bold, italic, links, and more",
+  "category": "basic",
+  "props": [
+    {
+      "name": "text",
+      "type": "string",
+      "description": "Text written in Markdown",
+      "required": false,
+      "default": ""
+    },
+    {
+      "name": "textPosition",
+      "type": "enum",
+      "description": "Text horizontal alignment",
+      "required": false,
+      "default": "LEFT",
+      "enum": ["LEFT", "CENTER", "RIGHT"]
+    },
+    {
+      "name": "textAlignment",
+      "type": "enum",
+      "description": "Text alignment (CSS text-align)",
+      "required": false,
+      "default": "LEFT",
+      "enum": ["LEFT", "CENTER", "RIGHT", "JUSTIFY"]
+    },
+    {
+      "name": "blockClass",
+      "type": "string | string[]",
+      "description": "Block container class(es) for CSS targeting",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "font",
+      "type": "enum",
+      "description": "Typography token for the text font",
+      "required": false,
+      "default": "t-body",
+      "enum": ["t-heading-1", "t-heading-2", "t-heading-3", "t-heading-4", "t-heading-5", "t-body", "t-small", "t-mini"]
+    },
+    {
+      "name": "textColor",
+      "type": "string",
+      "description": "CSS color variable or token for text color (e.g. 'c-on-base', 'c-emphasis')",
+      "required": false,
+      "default": "c-on-base"
+    }
+  ],
+  "allowedChildren": [],
+  "interface": {
+    "component": "RichText",
+    "composition": "blocks"
+  },
+  "examples": [
+    {
+      "description": "Centered heading",
+      "code": {
+        "rich-text#title": {
+          "props": {
+            "text": "# Our Store",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "font": "t-heading-1"
+          }
+        }
+      }
+    },
+    {
+      "description": "Left-aligned body text",
+      "code": {
+        "rich-text#description": {
+          "props": {
+            "text": "Welcome to our **amazing** store. [Shop now](/sale)!",
+            "textPosition": "LEFT",
+            "font": "t-body"
+          }
+        }
+      }
+    }
+  ],
+  "documentation": "https://developers.vtex.com/docs/apps/vtex.rich-text"
+}

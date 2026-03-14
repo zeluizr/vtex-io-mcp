@@ -1,0 +1,37 @@
+---
+title: "What is VTEX IO"
+slug: "vtex-io-documentation-what-is-vtex-io"
+source: "https://developers.vtex.com/docs/guides/vtex-io-documentation-what-is-vtex-io"
+---
+
+VTEX IO is a low-code development platform designed to handle performance, scalability, and security requirements in enterprise applications. By managing infrastructure complexities, VTEX IO enables developers to concentrate on application logic and business-specific needs.
+
+The platform supports a wide range of use cases, such as web storefronts, custom admin applications, and backend integrations.
+
+## Cloud-native infrastructure
+
+VTEX IO provides a cloud-native environment optimized for scalability and high availability, minimizing manual infrastructure management.
+
+- **Automatic scaling:** Resources are dynamically adjusted based on traffic demands, maintaining uptime and performance even during peak usage without requiring pre-scaling.
+- **VTEX IO Command-line interface (CLI):** The VTEX IO CLI enables fast setup and configuration, allowing developers to synchronize code with the cloud environment quickly and efficiently.
+- **Continuous deployment:** Code changes in the local environment are automatically synced and deployed to the cloud, ensuring a consistent development and production environment.
+
+## Workspaces
+
+The workspace functionality on VTEX IO provides isolated environments, allowing teams to develop, test, and deploy code safely without impacting the live environment.
+
+- **Version control:** Multiple workspaces allow developers to maintain and test separate code versions. Each workspace can be deployed independently to evaluate changes.
+- **Testing and monitoring:** Workspaces support A/B testing and enable real-time performance tracking, allowing teams to measure the impact of updates and optimize them accordingly.
+
+## Supported frameworks and technologies
+
+VTEX IO incorporates an opinionated set of frameworks supported by VTEX IO Builders to facilitate development with familiar tools.
+
+Supported frameworks include TypeScript, React, GraphQL, .NET, and Node.
+
+### VTEX IO Store Framework
+
+For teams specifically focused on building and maintaining storefronts, VTEX IO offers the Store Framework. This framework provides foundational tools and components, making it easy to create dynamic and customized ecommerce experiences.
+
+- **React-based store blocks:** The Store Framework offers pre-built, customizable React blocks, which simplify the process of developing and updating storefront layouts and features.
+- **Consistent architecture:** Designed to integrate seamlessly with other VTEX services, the Store Framework ensures stable, scalable storefronts that align with VTEX's core capabilities, supporting efficient and robust ecommerce solutions.

@@ -1,0 +1,168 @@
+{
+  "courses": [
+    {
+      "id": "onboarding",
+      "title": "Onboarding",
+      "description": "Get started with VTEX IO development — environment setup, tooling, and learning path.",
+      "file": "onboarding.md",
+      "order": 1,
+      "steps": [
+        "Introduction and Environment Setup",
+        "Technical Requirements",
+        "Learning Flow"
+      ],
+      "tags": ["setup", "cli", "getting-started"]
+    },
+    {
+      "id": "basic-blocks",
+      "title": "Basic Blocks",
+      "description": "Learn how to use the basic blocks of Store Framework.",
+      "file": "basic-blocks.md",
+      "order": 2,
+      "steps": [
+        "Setup",
+        "Introduction",
+        "Rich Text",
+        "Info Card",
+        "Product Detail Page",
+        "Product Detail Page Part 2",
+        "Search Result Page"
+      ],
+      "tags": ["store-framework", "blocks", "rich-text", "info-card", "flex-layout", "product-page", "search"]
+    },
+    {
+      "id": "layout-blocks",
+      "title": "Complex Layouts",
+      "description": "Learn how to build complex layouts using VTEX Store Framework layout blocks.",
+      "file": "layout-blocks.md",
+      "order": 3,
+      "steps": [
+        "Introducing Layout Blocks",
+        "Flex Layout",
+        "Slider Layout",
+        "Responsive Layout",
+        "Tab Layout",
+        "Modal Layout",
+        "Quick View with Modal",
+        "Stack Layout",
+        "Condition Layout"
+      ],
+      "tags": ["layout", "flex-layout", "slider-layout", "tab-layout", "modal-layout", "stack-layout", "condition-layout", "responsive-layout"]
+    },
+    {
+      "id": "styles-course",
+      "title": "Making Your Store Unique",
+      "description": "Learn how to customize the appearance of your VTEX Store Framework storefront.",
+      "file": "styles-course.md",
+      "order": 4,
+      "steps": [
+        "Introduction",
+        "CSS Handles",
+        "Global Styles (style.json)",
+        "Custom Templates",
+        "Rich Text with Markdown",
+        "Search Landing Page"
+      ],
+      "tags": ["css", "css-handles", "styles", "style.json", "custom-template", "routes", "landing-page", "markdown"]
+    },
+    {
+      "id": "store-block",
+      "title": "Custom Blocks",
+      "description": "Learn how to create custom React blocks for VTEX Store Framework.",
+      "file": "store-block.md",
+      "order": 5,
+      "steps": [
+        "Introduction",
+        "Manifest",
+        "React Component",
+        "Props Implementation",
+        "Countdown Implementation",
+        "CSS Handles",
+        "Messages (i18n)",
+        "Separating the Title Component",
+        "React Apollo (GraphQL)"
+      ],
+      "tags": ["react", "custom-block", "typescript", "css-handles", "i18n", "messages", "graphql", "apollo", "interfaces"]
+    },
+    {
+      "id": "service-course",
+      "title": "Services",
+      "description": "Learn how to build VTEX IO backend services using the Node.js builder.",
+      "file": "service-course.md",
+      "order": 6,
+      "steps": [
+        "Services in VTEX IO",
+        "Boilerplate Overview",
+        "Event Handling",
+        "Custom Clients (Analytics)",
+        "Using Clients in Event Handlers",
+        "Master Data Client",
+        "GraphQL Implementation",
+        "Testing with GraphiQL"
+      ],
+      "tags": ["node", "backend", "service", "events", "clients", "master-data", "graphql", "resolvers"]
+    },
+    {
+      "id": "calling-commerce-apis",
+      "title": "Calling Commerce APIs",
+      "description": "Learn how to call VTEX Commerce APIs from within a VTEX IO service.",
+      "file": "calling-commerce-apis.md",
+      "order": 7,
+      "steps": [
+        "Introduction",
+        "VTEX IO Authentication",
+        "Importing Commerce Clients",
+        "Using Commerce Clients"
+      ],
+      "tags": ["node", "clients", "catalog", "commerce-api", "policies", "authentication", "@vtex/clients"]
+    },
+    {
+      "id": "admin",
+      "title": "Admin Applications",
+      "description": "Learn how to create applications for the VTEX Admin panel.",
+      "file": "admin.md",
+      "order": 8,
+      "steps": [
+        "Introduction to Admin Apps",
+        "Navigation and Routes",
+        "Enhancing Navigation",
+        "Sub-sections",
+        "Look and Feel with vtex.styleguide",
+        "Connecting to a Service (GraphQL)"
+      ],
+      "tags": ["admin", "navigation", "styleguide", "react", "graphql", "routes"]
+    },
+    {
+      "id": "content-workflow",
+      "title": "Site Editor and Content",
+      "description": "Learn how to manage workspaces, publish apps, and use the VTEX Site Editor.",
+      "file": "content-workflow.md",
+      "order": 9,
+      "steps": [
+        "Workspaces",
+        "Publishing an App",
+        "Installing an App",
+        "Site Editor"
+      ],
+      "tags": ["workspaces", "publishing", "site-editor", "content-management", "vtex-cli"]
+    },
+    {
+      "id": "store-performance",
+      "title": "Improving Performance",
+      "description": "Learn best practices for improving the performance of VTEX Store Framework storefronts.",
+      "file": "store-performance.md",
+      "order": 10,
+      "steps": [
+        "The Fold Block",
+        "Menu Items as Props",
+        "Submenu Optimization",
+        "Image Optimization",
+        "Search Query Optimization",
+        "Block Refactoring"
+      ],
+      "tags": ["performance", "fold-block", "lazy-loading", "images", "search-optimization", "menu", "list-context"]
+    }
+  ],
+  "totalCourses": 10,
+  "lastUpdated": "2026-03-14"
+}

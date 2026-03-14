@@ -1,0 +1,128 @@
+{
+  "blockName": "info-card",
+  "app": "vtex.store-components",
+  "version": "3.x",
+  "description": "Displays a card with an image, headline, subheadline, and a call-to-action button",
+  "category": "basic",
+  "props": [
+    {
+      "name": "headline",
+      "type": "string",
+      "description": "Main heading text displayed on the card",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "subhead",
+      "type": "string",
+      "description": "Secondary text displayed below the headline",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "imageUrl",
+      "type": "string",
+      "description": "URL of the image displayed in the card",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "imageActionUrl",
+      "type": "string",
+      "description": "URL to navigate when the image is clicked",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "callToActionMode",
+      "type": "enum",
+      "description": "CTA display mode",
+      "required": false,
+      "default": "button",
+      "enum": ["none", "button", "link"]
+    },
+    {
+      "name": "callToActionText",
+      "type": "string",
+      "description": "Text displayed in the CTA button or link",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "callToActionUrl",
+      "type": "string",
+      "description": "URL to navigate when the CTA is clicked",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "textPosition",
+      "type": "enum",
+      "description": "Position of text overlay on the image",
+      "required": false,
+      "default": "left",
+      "enum": ["left", "center", "right"]
+    },
+    {
+      "name": "textAlignment",
+      "type": "enum",
+      "description": "Horizontal alignment of text inside the card",
+      "required": false,
+      "default": "left",
+      "enum": ["left", "center", "right"]
+    },
+    {
+      "name": "isFullModeStyle",
+      "type": "boolean",
+      "description": "If true, text overlaps the image (full image mode)",
+      "required": false,
+      "default": false
+    },
+    {
+      "name": "blockClass",
+      "type": "string | string[]",
+      "description": "Block container class(es) for CSS targeting",
+      "required": false,
+      "default": null
+    }
+  ],
+  "allowedChildren": [],
+  "interface": {
+    "component": "InfoCard",
+    "composition": "blocks"
+  },
+  "examples": [
+    {
+      "description": "Promotional banner with CTA",
+      "code": {
+        "info-card#promo": {
+          "props": {
+            "headline": "Summer Sale",
+            "subhead": "Up to 50% off on selected items",
+            "imageUrl": "https://storecomponents.vtexassets.com/assets/banner.png",
+            "callToActionMode": "button",
+            "callToActionText": "Shop Now",
+            "callToActionUrl": "/sale",
+            "textPosition": "left",
+            "isFullModeStyle": true
+          }
+        }
+      }
+    },
+    {
+      "description": "Simple card with link",
+      "code": {
+        "info-card#category": {
+          "props": {
+            "headline": "Men's Collection",
+            "imageUrl": "https://storecomponents.vtexassets.com/mens.png",
+            "callToActionMode": "link",
+            "callToActionText": "See all",
+            "callToActionUrl": "/mens"
+          }
+        }
+      }
+    }
+  ],
+  "documentation": "https://developers.vtex.com/docs/apps/vtex.store-components/infocard"
+}

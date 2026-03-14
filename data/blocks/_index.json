@@ -1,0 +1,8 @@
+{
+  "rich-text": "rich-text.json",
+  "info-card": "info-card.json",
+  "flex-layout.row": "flex-layout.json",
+  "flex-layout.col": "flex-layout.json",
+  "shelf": "shelf.json",
+  "image": "image.json"
+}

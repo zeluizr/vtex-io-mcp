@@ -1,0 +1,81 @@
+---
+title: 'Titles'
+source: vtexdocs/content-portal-content
+slugEN: titles
+locale: en
+---
+
+Titles consist of up to three words to name the content of a page or a specific section within it. This pattern is commonly used in components like Modals or Tabs.
+
+## General rules
+
+Use sentence case but capitalize proper nouns.
+
+| Do | Don't |
+| --------- | ------------ |
+| Give feedback | Give Feedback |
+| Help Center | Help center |
+
+Don't use punctuation, such as question marks or periods.
+
+| Do | Don't |
+| --------- | ------------ |
+| Page not found | Page not found. |
+| Delete user | Delete user? |
+
+Avoid using articles.
+
+| Do | Don't |
+| --------- | ------------ |
+| Add new seller | Add a new seller |
+
+Don't use personal pronouns.
+
+| Do | Don't |
+| --------- | ------------ |
+| Application keys | My application keys |
+
+Keep it as short as possible while still being descriptive enough.
+
+| Do | Don't |
+| --------- | ------------ |
+| Inventory | Inventory management |
+| Campaigns | Store promotional campaigns |
+
+Avoid redundancy, such as by omitting context present elsewhere.
+
+Don't use a marketing tone of voice.
+
+| Do | Don't |
+| --------- | ------------ |
+| Search | VTEX Intelligent Search |
+| New product | Quickly create a product |
+
+## Specific rules
+
+### Page titles
+
+Reuse the same page title whenever possible, such as in the URL, title meta tag, and navigation entry.
+
+In a form page, when an item is being edited, use the name of the item as the page title. When a new item is being created, use the word `New` followed by the item type.
+
+| Do | Don't |
+| --------- | ------------ |
+| Christmas discount (editing) | Promotion |
+| New promotion (creating) | Untitled promotion |
+
+In a listing page, use the type of item being listed as the page title. Include only nouns in the plural form.
+
+| Do | Don't |
+| --------- | ------------ |
+| Products | All products |
+| Orders | Orders listing |
+
+### Modal titles
+
+In a modal with a form or actions, use an action label as the title. If the modal was triggered by an action, prefer to repeat the verb of the action that triggered the modal.
+
+| Do | Don't |
+| --------- | ------------ |
+| Delete shipping policy | Shipping policy |
+| Create release | Create |

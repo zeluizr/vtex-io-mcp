@@ -1,0 +1,120 @@
+{
+  "blockName": "image",
+  "app": "vtex.store-components",
+  "version": "3.x",
+  "description": "Displays a responsive image with optional link, alt text, and width/height control",
+  "category": "basic",
+  "props": [
+    {
+      "name": "src",
+      "type": "string",
+      "description": "Image source URL",
+      "required": true,
+      "default": null
+    },
+    {
+      "name": "alt",
+      "type": "string",
+      "description": "Alternative text for accessibility",
+      "required": false,
+      "default": ""
+    },
+    {
+      "name": "href",
+      "type": "string",
+      "description": "URL to navigate to when the image is clicked",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "link",
+      "type": "object",
+      "description": "Link object with url and title for navigation",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "maxWidth",
+      "type": "number | string",
+      "description": "Maximum width of the image in pixels or CSS value",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "maxHeight",
+      "type": "number | string",
+      "description": "Maximum height of the image in pixels or CSS value",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "minWidth",
+      "type": "number | string",
+      "description": "Minimum width of the image",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "minHeight",
+      "type": "number | string",
+      "description": "Minimum height of the image",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "width",
+      "type": "number | string",
+      "description": "Explicit width of the image",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "height",
+      "type": "number | string",
+      "description": "Explicit height of the image",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "blockClass",
+      "type": "string | string[]",
+      "description": "Block container class(es) for CSS targeting",
+      "required": false,
+      "default": null
+    }
+  ],
+  "allowedChildren": [],
+  "interface": {
+    "component": "Image",
+    "composition": "blocks"
+  },
+  "examples": [
+    {
+      "description": "Simple logo image",
+      "code": {
+        "image#logo": {
+          "props": {
+            "src": "https://mystore.com/images/logo.png",
+            "alt": "My Store Logo",
+            "maxWidth": 200
+          }
+        }
+      }
+    },
+    {
+      "description": "Clickable banner image",
+      "code": {
+        "image#banner": {
+          "props": {
+            "src": "https://mystore.com/images/banner.jpg",
+            "alt": "Summer Sale Banner",
+            "href": "/sale",
+            "maxWidth": 1440,
+            "maxHeight": 500
+          }
+        }
+      }
+    }
+  ],
+  "documentation": "https://developers.vtex.com/docs/apps/vtex.store-components/image"
+}

@@ -1,0 +1,139 @@
+{
+  "blockName": "flex-layout.row",
+  "app": "vtex.flex-layout",
+  "version": "0.x",
+  "description": "Flexible row layout block. Use flex-layout.row for horizontal arrangements and flex-layout.col for vertical (column) arrangements. Children blocks are placed inside.",
+  "category": "layout",
+  "props": [
+    {
+      "name": "blockClass",
+      "type": "string | string[]",
+      "description": "Block container class(es) for CSS targeting",
+      "required": false,
+      "default": null
+    },
+    {
+      "name": "horizontalAlign",
+      "type": "enum",
+      "description": "Horizontal (main-axis) alignment of children",
+      "required": false,
+      "default": "left",
+      "enum": ["left", "center", "right", "between", "around"]
+    },
+    {
+      "name": "verticalAlign",
+      "type": "enum",
+      "description": "Vertical (cross-axis) alignment of children",
+      "required": false,
+      "default": "top",
+      "enum": ["top", "middle", "bottom"]
+    },
+    {
+      "name": "preventVerticalStretch",
+      "type": "boolean",
+      "description": "If true, children won't be stretched vertically to fill the row height",
+      "required": false,
+      "default": false
+    },
+    {
+      "name": "rowGap",
+      "type": "number",
+      "description": "Gap in grid units between rows",
+      "required": false,
+      "default": 0
+    },
+    {
+      "name": "colGap",
+      "type": "number",
+      "description": "Gap in grid units between columns",
+      "required": false,
+      "default": 0
+    },
+    {
+      "name": "preserveLayoutOnMobile",
+      "type": "boolean",
+      "description": "If true, preserves the row layout on mobile (doesn't stack)",
+      "required": false,
+      "default": false
+    },
+    {
+      "name": "experimentalHideChildren",
+      "type": "boolean",
+      "description": "Experimental: hides children slots",
+      "required": false,
+      "default": false
+    },
+    {
+      "name": "fullWidth",
+      "type": "boolean",
+      "description": "If true, the row spans the full container width",
+      "required": false,
+      "default": false
+    }
+  ],
+  "allowedChildren": ["any"],
+  "variants": [
+    {
+      "blockName": "flex-layout.col",
+      "description": "Vertical column variant — arranges children in a column",
+      "props": [
+        {
+          "name": "horizontalAlign",
+          "type": "enum",
+          "description": "Horizontal alignment of children within the column",
+          "enum": ["left", "center", "right"]
+        },
+        {
+          "name": "verticalAlign",
+          "type": "enum",
+          "description": "Vertical alignment of children within the column",
+          "enum": ["top", "middle", "bottom"]
+        },
+        {
+          "name": "width",
+          "type": "string | enum",
+          "description": "Column width. Can be a percentage ('25%', '50%') or a grow value",
+          "enum": ["grow"]
+        }
+      ]
+    }
+  ],
+  "interface": {
+    "component": "FlexLayout",
+    "composition": "children"
+  },
+  "examples": [
+    {
+      "description": "Two-column layout with rich text and image",
+      "code": {
+        "flex-layout.row#hero": {
+          "children": ["flex-layout.col#text", "flex-layout.col#image"]
+        },
+        "flex-layout.col#text": {
+          "props": { "width": "50%" },
+          "children": ["rich-text#headline"]
+        },
+        "flex-layout.col#image": {
+          "props": { "width": "50%" },
+          "children": ["image#hero"]
+        },
+        "rich-text#headline": {
+          "props": { "text": "# Welcome to our Store" }
+        }
+      }
+    },
+    {
+      "description": "Centered row with gap",
+      "code": {
+        "flex-layout.row#centered": {
+          "props": {
+            "horizontalAlign": "center",
+            "colGap": 4
+          },
+          "children": ["info-card#card1", "info-card#card2", "info-card#card3"]
+        }
+      }
+    }
+  ],
+  "documentation": "https://developers.vtex.com/docs/apps/vtex.flex-layout"
+}
