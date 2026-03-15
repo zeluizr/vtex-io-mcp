@@ -15,6 +15,9 @@
   },
   "files": ["build", "data"],
   "keywords": ["mcp", "vtex", "vtex-io", "store-framework", "ecommerce", "react", "node", "graphql"],
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://vtex-io-mcp.zeluizr.com/",
   "repository": {
     "type": "git",
