@@ -1,5 +1,5 @@
 {
-  "name": "vtex-io-mcp",
+  "name": "@zeluizr/vtex-io-mcp",
   "version": "0.1.0",
   "description": "MCP server for VTEX IO development — Store Framework, React, Node services, GraphQL, Admin, and more",
   "type": "module",
@@ -15,6 +15,14 @@
   },
   "files": ["build", "data"],
   "keywords": ["mcp", "vtex", "vtex-io", "store-framework", "ecommerce", "react", "node", "graphql"],
+  "homepage": "https://vtex-io-mcp.zeluizr.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeluizr/vtex-io-mcp.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "license": "MIT",
   "engines": { "node": ">=18" },
   "dependencies": {

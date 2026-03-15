@@ -1,5 +1,13 @@
 # VTEX IO MCP Server
 
+[![Publish to GitHub Packages](https://github.com/zeluizr/vtex-io-mcp/actions/workflows/publish.yml/badge.svg)](https://github.com/zeluizr/vtex-io-mcp/actions/workflows/publish.yml)
+[![npm version](https://img.shields.io/github/package-json/v/zeluizr/vtex-io-mcp)](https://github.com/zeluizr/vtex-io-mcp/pkgs/npm/vtex-io-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js >=18](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org)
+[![MCP](https://img.shields.io/badge/MCP-compatible-blue)](https://modelcontextprotocol.io)
+
+**Documentation: [vtex-io-mcp.zeluizr.com](https://vtex-io-mcp.zeluizr.com/)**
+
 A Model Context Protocol (MCP) server that acts as the ultimate copilot for VTEX IO development. Install it once and get expert help with Store Framework, React components, Node.js services, GraphQL, Admin apps, Pixel apps, and everything else in the VTEX IO ecosystem — directly inside Claude Desktop, Claude Code, Cursor, or any MCP-compatible client.
 
 ## Quick Start
