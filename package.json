@@ -1,6 +1,6 @@
 {
   "name": "vtex-io-mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "MCP server for VTEX IO development — Store Framework, React, Node services, GraphQL, Admin, and more",
   "type": "module",
   "bin": {
@@ -13,8 +13,20 @@
     "ingest:apps": "tsx scripts/ingest-vtex-app-docs.ts",
     "inspect": "npx @modelcontextprotocol/inspector build/index.js"
   },
-  "files": ["build", "data"],
-  "keywords": ["mcp", "vtex", "vtex-io", "store-framework", "ecommerce", "react", "node", "graphql"],
+  "files": [
+    "build",
+    "data"
+  ],
+  "keywords": [
+    "mcp",
+    "vtex",
+    "vtex-io",
+    "store-framework",
+    "ecommerce",
+    "react",
+    "node",
+    "graphql"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -24,7 +36,9 @@
     "url": "https://github.com/zeluizr/vtex-io-mcp.git"
   },
   "license": "MIT",
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
     "zod": "^3.22.4"
