@@ -28,11 +28,13 @@ jobs:
       # Publish to npmjs.com via OIDC Trusted Publisher (no token needed)
       - run: npm publish --provenance --access public
 
-      # Publish to GitHub Packages
+      # Publish to GitHub Packages (requires scoped name)
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
           registry-url: 'https://npm.pkg.github.com'
+
+      - run: npm pkg set name="@zeluizr/vtex-io-mcp"
 
       - run: npm publish --access public
         env:
