@@ -19,7 +19,21 @@
       "Bash(gh auth:*)",
       "Bash(git init:*)",
       "Bash(gh repo:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git remote:*)",
+      "Bash(npm login:*)",
+      "Bash(npm publish:*)",
+      "Bash(npm view:*)",
+      "Bash(claude mcp:*)",
+      "WebFetch(domain:docs.github.com)",
+      "Bash(git tag:*)",
+      "Bash(gh release:*)",
+      "Bash(gh run:*)",
+      "Bash(gh secret:*)",
+      "Bash(gh workflow:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:docs.npmjs.com)",
+      "Bash(npm version:*)"
     ]
   }
 }
