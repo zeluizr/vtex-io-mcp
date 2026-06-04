@@ -1,14 +1,17 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+Todos los cambios notables de este proyecto se documentan en este archivo.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
+y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
-## [Unreleased]
+## [No publicado]
 
-## [1.0.0] - 2026-01-01
+### Añadido
+- Estandarización del README (badges de badgen, contenido en español).
+- Archivo `LICENSE` (MIT) y este `CHANGELOG`.
 
-### Added
-- Initial release
+## [0.1.2] - 2026-06-04
 
+### Añadido
+- Versión inicial del proyecto.

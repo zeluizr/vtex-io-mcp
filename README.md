@@ -24,6 +24,7 @@
     <a href="#-instalación">Instalación</a> ·
     <a href="#-uso">Uso</a> ·
     <a href="#-scripts">Scripts</a> ·
+    <a href="#-changelog">Changelog</a> ·
     <a href="#-licencia">Licencia</a> ·
     <a href="#-autor">Autor</a>
   </p>
@@ -60,6 +61,10 @@ vtex-io-mcp --help
 | `pnpm ingest:courses` | `tsx scripts/ingest-vtex-courses.ts` |
 | `pnpm ingest:apps` | `tsx scripts/ingest-vtex-app-docs.ts` |
 | `pnpm inspect` | `npx @modelcontextprotocol/inspector build/index.js` |
+
+## 📝 Changelog
+
+Consulta el historial de cambios en [`CHANGELOG.md`](./CHANGELOG.md).
 
 ## 📄 Licencia
 
