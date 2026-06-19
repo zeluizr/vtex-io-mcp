@@ -40,7 +40,7 @@
 > para que puedas clonarlo, leer el código y entender cómo está construido.
 >
 > Para uso real, VTEX ofrece su **MCP oficial**:
-> **https://www.vtex.com/en-us/vtex-vision/developer-mcp**
+> **<https://www.vtex.com/en-us/vtex-vision/developer-mcp>**
 >
 > Consulta la sección [MCP oficial de VTEX](#-mcp-oficial-de-vtex) más abajo.
 
@@ -181,7 +181,7 @@ Distribuido bajo la licencia MIT. Ver [`LICENSE`](./LICENSE).
 
 ## 👤 Autor
 
-**José Luiz Rodrigues**
+Creado por **José Luiz Rodrigues**.
 
 <a href="https://github.com/zeluizr"><img alt="GitHub" src="https://badgen.net/badge/GitHub/zeluizr/black?icon=github"></a>
 <a href="https://www.npmjs.com/~zeluizr"><img alt="npm" src="https://badgen.net/badge/npm/zeluizr/red?icon=npm"></a>
