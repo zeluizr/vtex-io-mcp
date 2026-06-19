@@ -1,7 +1,7 @@
 {
   "name": "vtex-io-mcp",
   "version": "0.1.2",
-  "description": "MCP server for VTEX IO development — Store Framework, React, Node services, GraphQL, Admin, and more",
+  "description": "[Archivado · solo estudio] MCP server for VTEX IO development — usa el MCP oficial de VTEX (@vtex/developer-mcp)",
   "type": "module",
   "bin": {
     "vtex-io-mcp": "./build/index.js"
