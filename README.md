@@ -5,13 +5,16 @@
   <p><em>Servidor MCP de la comunidad para desarrollo en VTEX IO — Store Framework, React, servicios Node, GraphQL, Admin y más.</em></p>
 
   <p>
-    <a href="https://github.com/zeluizr/vtex-io-mcp/actions"><img alt="CI" src="https://badgen.net/github/checks/zeluizr/vtex-io-mcp"></a>
+    <img alt="estado: solo estudio" src="https://badgen.net/badge/estado/solo%20estudio/orange">
+  </p>
+
+  <p>
     <a href="https://www.npmjs.com/package/vtex-io-mcp"><img alt="npm" src="https://badgen.net/npm/v/vtex-io-mcp"></a>
     <a href="https://www.npmjs.com/package/vtex-io-mcp"><img alt="downloads" src="https://badgen.net/npm/dm/vtex-io-mcp"></a>
     <a href="./LICENSE"><img alt="license" src="https://badgen.net/github/license/zeluizr/vtex-io-mcp"></a>
+    <a href="https://github.com/zeluizr/vtex-io-mcp/actions"><img alt="CI" src="https://badgen.net/github/checks/zeluizr/vtex-io-mcp"></a>
     <a href="https://github.com/zeluizr/vtex-io-mcp/stargazers"><img alt="stars" src="https://badgen.net/github/stars/zeluizr/vtex-io-mcp"></a>
     <a href="https://github.com/zeluizr/vtex-io-mcp/commits"><img alt="last commit" src="https://badgen.net/github/last-commit/zeluizr/vtex-io-mcp"></a>
-    <img alt="estado" src="https://badgen.net/badge/estado/solo%20estudio/orange">
   </p>
 
   <p>
@@ -45,6 +48,12 @@
 > Consulta la sección [MCP oficial de VTEX](#-mcp-oficial-de-vtex) más abajo.
 
 ## 🏛️ MCP oficial de VTEX
+
+<p align="center">
+  <a href="https://www.vtex.com/en-us/vtex-vision/developer-mcp">
+    <img src="https://www.vtex.com/images/static/vtex-vision/mcp-ai-assisted-dev.svg" alt="VTEX AI Developer Toolkit" width="640">
+  </a>
+</p>
 
 El **VTEX AI Developer Toolkit** reúne las herramientas que los agentes de IA y los
 asistentes de código pueden usar al trabajar con la plataforma VTEX. Son dos y se pueden
@@ -81,7 +90,7 @@ fiable. Están organizadas por _tracks_ (FastStore, Payment, VTEX IO, Marketplac
 La instalación recomendada es con `npx`, que detecta las herramientas compatibles que tengas
 instaladas y coloca los archivos donde cada una los espera:
 
-```sh
+```bash
 npx skills add vtex/skills
 ```
 

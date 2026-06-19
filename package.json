@@ -1,6 +1,6 @@
 {
   "name": "vtex-io-mcp",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "[Archivado · solo estudio] MCP server for VTEX IO development — usa el MCP oficial de VTEX (@vtex/developer-mcp)",
   "type": "module",
   "bin": {
