@@ -5,6 +5,16 @@ Todos los cambios notables de este proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
+## [0.1.5] - 2026-06-19
+
+### Corregido
+- Badges del README migrados de badgen a shields.io (el badge de versión de npm
+  devolvía error 500). Corrige también los badges mostrados en la página de npm.
+
+### Modificado
+- Workflow de publicación: publica solo en npmjs.com (se elimina GitHub Packages) y
+  reaplica la _deprecation_ automáticamente tras publicar.
+
 ## [0.1.4] - 2026-06-19
 
 ### Modificado

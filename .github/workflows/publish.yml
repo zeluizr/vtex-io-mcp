@@ -1,4 +1,4 @@
-name: Publish to npm and GitHub Packages
+name: Publish to npm
 
 on:
   push:
@@ -11,7 +11,6 @@ jobs:
     permissions:
       contents: write   # required to create GitHub Release
       id-token: write   # required for provenance
-      packages: write   # required for GitHub Packages
 
     steps:
       - uses: actions/checkout@v4
@@ -30,17 +29,13 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      # Publish to GitHub Packages (requires scoped name)
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          registry-url: 'https://npm.pkg.github.com'
-
-      - run: npm pkg set name="@zeluizr/vtex-io-mcp"
-
-      - run: npm publish --access public
+      # Re-apply deprecation — this is an archived, study-only package.
+      # The automation token (NPM_TOKEN) bypasses 2FA/OTP.
+      - name: Re-apply deprecation
+        run: |
+          npm deprecate "vtex-io-mcp@*" "Descontinuado y solo para estudio. Usa el MCP oficial de VTEX: https://www.vtex.com/en-us/vtex-vision/developer-mcp"
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create GitHub Release
         env:
