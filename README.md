@@ -5,22 +5,22 @@
   <p><em>Servidor MCP de la comunidad para desarrollo en VTEX IO — Store Framework, React, servicios Node, GraphQL, Admin y más.</em></p>
 
   <p>
-    <img alt="estado: solo estudio" src="https://badgen.net/badge/estado/solo%20estudio/orange">
+    <img alt="estado: solo estudio" src="https://img.shields.io/badge/estado-solo%20estudio-orange">
   </p>
 
   <p>
-    <a href="https://www.npmjs.com/package/vtex-io-mcp"><img alt="npm" src="https://badgen.net/npm/v/vtex-io-mcp"></a>
-    <a href="https://www.npmjs.com/package/vtex-io-mcp"><img alt="downloads" src="https://badgen.net/npm/dm/vtex-io-mcp"></a>
-    <a href="./LICENSE"><img alt="license" src="https://badgen.net/github/license/zeluizr/vtex-io-mcp"></a>
-    <a href="https://github.com/zeluizr/vtex-io-mcp/actions"><img alt="CI" src="https://badgen.net/github/checks/zeluizr/vtex-io-mcp"></a>
-    <a href="https://github.com/zeluizr/vtex-io-mcp/stargazers"><img alt="stars" src="https://badgen.net/github/stars/zeluizr/vtex-io-mcp"></a>
-    <a href="https://github.com/zeluizr/vtex-io-mcp/commits"><img alt="last commit" src="https://badgen.net/github/last-commit/zeluizr/vtex-io-mcp"></a>
+    <a href="https://www.npmjs.com/package/vtex-io-mcp"><img alt="npm" src="https://img.shields.io/npm/v/vtex-io-mcp"></a>
+    <a href="https://www.npmjs.com/package/vtex-io-mcp"><img alt="downloads" src="https://img.shields.io/npm/dm/vtex-io-mcp"></a>
+    <a href="./LICENSE"><img alt="license" src="https://img.shields.io/github/license/zeluizr/vtex-io-mcp"></a>
+    <a href="https://github.com/zeluizr/vtex-io-mcp/actions"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/zeluizr/vtex-io-mcp/ci.yml?branch=main&amp;label=CI"></a>
+    <a href="https://github.com/zeluizr/vtex-io-mcp/stargazers"><img alt="stars" src="https://img.shields.io/github/stars/zeluizr/vtex-io-mcp"></a>
+    <a href="https://github.com/zeluizr/vtex-io-mcp/commits"><img alt="last commit" src="https://img.shields.io/github/last-commit/zeluizr/vtex-io-mcp"></a>
   </p>
 
   <p>
-    <img alt="TypeScript" src="https://badgen.net/badge/TypeScript/lang/blue">
-    <img alt="Node.js" src="https://badgen.net/badge/Node.js/runtime/green">
-    <img alt="MCP" src="https://badgen.net/badge/MCP/server/purple">
+    <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-lang-blue">
+    <img alt="Node.js" src="https://img.shields.io/badge/Node.js-runtime-green">
+    <img alt="MCP" src="https://img.shields.io/badge/MCP-server-purple">
   </p>
 
   <p>
@@ -192,8 +192,8 @@ Distribuido bajo la licencia MIT. Ver [`LICENSE`](./LICENSE).
 
 Creado por **José Luiz Rodrigues**.
 
-<a href="https://github.com/zeluizr"><img alt="GitHub" src="https://badgen.net/badge/GitHub/zeluizr/black?icon=github"></a>
-<a href="https://www.npmjs.com/~zeluizr"><img alt="npm" src="https://badgen.net/badge/npm/zeluizr/red?icon=npm"></a>
+<a href="https://github.com/zeluizr"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-zeluizr-black?logo=github"></a>
+<a href="https://www.npmjs.com/~zeluizr"><img alt="npm" src="https://img.shields.io/badge/npm-zeluizr-red?logo=npm"></a>
 
 ---
 
