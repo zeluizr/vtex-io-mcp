@@ -1,52 +1,52 @@
 {
-  "name": "vtex-io-mcp",
-  "version": "0.1.5",
-  "description": "[Archivado · solo estudio] MCP server for VTEX IO development — usa el MCP oficial de VTEX (@vtex/developer-mcp)",
-  "type": "module",
-  "bin": {
-    "vtex-io-mcp": "build/index.js"
-  },
-  "scripts": {
-    "build": "tsc && chmod 755 build/index.js",
-    "lint": "tsc --noEmit",
-    "dev": "tsc --watch",
-    "ingest:courses": "tsx scripts/ingest-vtex-courses.ts",
-    "ingest:apps": "tsx scripts/ingest-vtex-app-docs.ts",
-    "inspect": "npx @modelcontextprotocol/inspector build/index.js"
-  },
-  "files": [
-    "build",
-    "data"
-  ],
-  "keywords": [
-    "mcp",
-    "vtex",
-    "vtex-io",
-    "store-framework",
-    "ecommerce",
-    "react",
-    "node",
-    "graphql"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "homepage": "https://vtex-io-mcp.zeluizr.com/",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zeluizr/vtex-io-mcp.git"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=18"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0",
-    "zod": "^3.22.4"
-  },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "tsx": "^4.0.0",
-    "typescript": "^5.3.0"
-  }
+	"name": "vtex-io-mcp",
+	"version": "0.1.6",
+	"description": "MCP server for VTEX IO development — Store Framework, React, Node services, GraphQL, Admin and more",
+	"type": "module",
+	"bin": {
+		"vtex-io-mcp": "build/index.js"
+	},
+	"scripts": {
+		"build": "tsc && chmod 755 build/index.js",
+		"lint": "tsc --noEmit",
+		"dev": "tsc --watch",
+		"ingest:courses": "tsx scripts/ingest-vtex-courses.ts",
+		"ingest:apps": "tsx scripts/ingest-vtex-app-docs.ts",
+		"inspect": "npx @modelcontextprotocol/inspector build/index.js"
+	},
+	"files": [
+		"build",
+		"data"
+	],
+	"keywords": [
+		"mcp",
+		"vtex",
+		"vtex-io",
+		"store-framework",
+		"ecommerce",
+		"react",
+		"node",
+		"graphql"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"homepage": "https://www.npmjs.com/package/vtex-io-mcp",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zeluizr/vtex-io-mcp.git"
+	},
+	"license": "MIT",
+	"engines": {
+		"node": ">=18"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.0.0",
+		"zod": "^3.22.4"
+	},
+	"devDependencies": {
+		"@types/node": "^20.0.0",
+		"tsx": "^4.0.0",
+		"typescript": "^5.3.0"
+	}
 }

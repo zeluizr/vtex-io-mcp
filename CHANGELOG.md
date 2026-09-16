@@ -5,6 +5,18 @@ Todos los cambios notables de este proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
+## [No publicado]
+
+### Modificado
+- El proyecto se reactiva: deja de estar archivado y vuelve a desarrollarse.
+- README reescrito con el formato de servidor MCP: instalación por cliente (Claude Code,
+  Claude Desktop, Cursor, VS Code, Windsurf), herramientas con parámetros, resources,
+  hoja de ruta y guía para añadir herramientas. Se quitan las referencias al MCP oficial
+  de VTEX.
+- Imagen de cabecera en el README.
+- Descripción del paquete en npm sin la marca de archivado.
+- El workflow de publicación deja de aplicar la _deprecation_ en npm.
+
 ## [0.1.5] - 2026-06-19
 
 ### Corregido
