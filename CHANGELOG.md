@@ -7,6 +7,17 @@ y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
 ## [No publicado]
 
+### Corregido
+- El servidor MCP informa la versión del `package.json` en lugar de `0.1.0` fijo.
+
+### Modificado
+- El CI corre también en los _pull requests_ y _pushes_ a `dev` y `qa`.
+- `homepage` del paquete apunta a la página de npm; se desactiva el dominio
+  `vtex-io-mcp.zeluizr.com`, que redirigía al MCP oficial de VTEX.
+- Nueva imagen de cabecera en el README.
+
+## [0.1.6] - 2026-09-16
+
 ### Modificado
 - El proyecto se reactiva: deja de estar archivado y vuelve a desarrollarse.
 - README reescrito con el formato de servidor MCP: instalación por cliente (Claude Code,
