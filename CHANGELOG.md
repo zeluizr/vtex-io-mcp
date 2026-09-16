@@ -5,7 +5,7 @@ Todos los cambios notables de este proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
-## [No publicado]
+## [0.1.7] - 2026-09-16
 
 ### Corregido
 - El servidor MCP informa la versión del `package.json` en lugar de `0.1.0` fijo.
