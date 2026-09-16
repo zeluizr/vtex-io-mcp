@@ -1,3 +1,5 @@
+![VTEX IO MCP: servidor MCP de la comunidad para desarrollo en VTEX IO](./public/hero-vtex-io-mcp.png)
+
 # vtex-io-mcp
 
 **Servidor MCP de la comunidad para desarrollar en VTEX IO: Store Framework, React, servicios Node, GraphQL, Admin y más.**
