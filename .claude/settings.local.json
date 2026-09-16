@@ -33,7 +33,11 @@
       "Bash(gh workflow:*)",
       "Bash(git push:*)",
       "WebFetch(domain:docs.npmjs.com)",
-      "Bash(npm version:*)"
+      "Bash(npm version:*)",
+      "Bash(dig +short vtex-io-mcp.zeluizr.com CNAME)",
+      "Bash(dig +short vtex-io-mcp.zeluizr.com A)",
+      "Bash(dig +short zeluizr.com NS)",
+      "Bash(curl -sI https://vtex-io-mcp.zeluizr.com/)"
     ]
   }
 }
