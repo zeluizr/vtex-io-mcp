@@ -31,7 +31,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"homepage": "https://github.com/zeluizr/vtex-io-mcp#readme",
+	"homepage": "https://www.npmjs.com/package/vtex-io-mcp",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/zeluizr/vtex-io-mcp.git"
