@@ -6,6 +6,9 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 const DATA_DIR = join(__dirname, '..', '..', 'data')
 
+// O ID vira nome de arquivo, então só aceita nomes simples: sem pontos nem separadores de caminho
+const SAFE_ID = /^[A-Za-z0-9_-]+$/
+
 export interface BlockData {
   blockName: string
   app: string
@@ -81,6 +84,7 @@ export function loadAllBlocks(): BlockData[] {
 
 export function loadBuilder(builderName: string): BuilderData | null {
   if (builderCache.has(builderName)) return builderCache.get(builderName)!
+  if (!SAFE_ID.test(builderName)) return null
 
   const builderPath = join(DATA_DIR, 'builders', `${builderName}.json`)
   try {
@@ -158,6 +162,7 @@ const conceptContentCache: Map<string, string> = new Map()
 
 export function loadConcept(conceptId: string): string | null {
   if (conceptContentCache.has(conceptId)) return conceptContentCache.get(conceptId)!
+  if (!SAFE_ID.test(conceptId)) return null
 
   const conceptPath = join(DATA_DIR, 'concepts', `${conceptId}.md`)
   try {
