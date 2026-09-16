@@ -29,14 +29,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      # Re-apply deprecation — this is an archived, study-only package.
-      # The automation token (NPM_TOKEN) bypasses 2FA/OTP.
-      - name: Re-apply deprecation
-        run: |
-          npm deprecate "vtex-io-mcp@*" "Descontinuado y solo para estudio. Usa el MCP oficial de VTEX: https://www.vtex.com/en-us/vtex-vision/developer-mcp"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
       - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
