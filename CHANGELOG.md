@@ -5,7 +5,7 @@ Todos los cambios notables de este proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
 y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
-## [No publicado]
+## [0.1.8] - 2026-09-26
 
 ### Añadido
 - El paquete declara `mcpName` (`io.github.zeluizr/vtex-io-mcp`) y se publica también en el
