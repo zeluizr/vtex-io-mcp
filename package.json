@@ -1,6 +1,7 @@
 {
 	"name": "vtex-io-mcp",
-	"version": "0.1.7",
+	"version": "0.1.8",
+	"mcpName": "io.github.zeluizr/vtex-io-mcp",
 	"description": "MCP server for VTEX IO development — Store Framework, React, Node services, GraphQL, Admin and more",
 	"type": "module",
 	"bin": {

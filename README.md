@@ -97,6 +97,8 @@ En `~/.codeium/windsurf/mcp_config.json`:
 
 Cualquier cliente con transporte `stdio` sirve: el comando es `npx` y los argumentos, `-y vtex-io-mcp`. Si prefieres una instalación global, `npm install -g vtex-io-mcp` y usa `vtex-io-mcp` como comando.
 
+El servidor está listado en el [Official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.zeluizr%2Fvtex-io-mcp/versions/latest) como `io.github.zeluizr/vtex-io-mcp`.
+
 ## Uso
 
 Después de reiniciar el cliente, pide lo que necesitas en lenguaje natural y el asistente elige la herramienta:
@@ -217,7 +219,7 @@ claude mcp add vtex-io-local -- node /ruta/a/vtex-io-mcp/build/index.js
 
 El trabajo nace en una rama salida de `dev` y el PR va contra `dev`. De ahí se promueve a `qa` y, después de probar, a `main`, siempre con merge de la rama completa. El CI corre `lint` y `build` en Node 18, 20 y 22.
 
-Para publicar, actualiza la versión en `package.json` y `CHANGELOG.md` y sube un tag `v*`: el workflow `publish.yml` compila, publica en npm con _provenance_ y crea el GitHub Release.
+Para publicar, actualiza la versión en `package.json` y `CHANGELOG.md` y sube un tag `v*`: el workflow `publish.yml` compila, publica en npm con _provenance_, crea el GitHub Release y publica el `server.json` en el MCP Registry.
 
 ## Changelog
 
