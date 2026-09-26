@@ -7,6 +7,13 @@ y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
 ## [No publicado]
 
+### Añadido
+- El paquete declara `mcpName` (`io.github.zeluizr/vtex-io-mcp`) y se publica también en el
+  [Official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.zeluizr/vtex-io-mcp),
+  de donde lo toman Smithery, PulseMCP y otros directorios. Nuevo `server.json` con el
+  esquema oficial; el workflow de publicación lo valida, sincroniza su versión con la del tag
+  y lo publica con `mcp-publisher` autenticado por OIDC de GitHub Actions, sin token en secrets.
+
 ### Seguridad
 - `explain-concept` y el resource `vtex://concepts/{conceptId}` aceptan solo IDs con
   letras, números, `-` y `_`. Antes, un ID con segmentos de ruta podía leer archivos `.md`
