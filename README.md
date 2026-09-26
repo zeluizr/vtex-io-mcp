@@ -1,6 +1,8 @@
 ![VTEX IO MCP: servidor MCP de la comunidad para desarrollo en VTEX IO](./public/hero-vtex-io-mcp.png)
 
-# vtex-io-mcp
+[![vtex-io-mcp MCP server – quality and maintenance score on Glama](https://glama.ai/mcp/servers/zeluizr/vtex-io-mcp/badges/card.svg)](https://glama.ai/mcp/servers/zeluizr/vtex-io-mcp)
+
+# VTEX IO MCP [![vtex-io-mcp MCP server – quality and maintenance score on Glama](https://glama.ai/mcp/servers/zeluizr/vtex-io-mcp/badges/score.svg)](https://glama.ai/mcp/servers/zeluizr/vtex-io-mcp) 
 
 **Servidor MCP para desarrollar en VTEX IO: Store Framework, React, servicios Node, GraphQL, Admin y más.**
 
