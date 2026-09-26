@@ -97,7 +97,7 @@ En `~/.codeium/windsurf/mcp_config.json`:
 
 Cualquier cliente con transporte `stdio` sirve: el comando es `npx` y los argumentos, `-y vtex-io-mcp`. Si prefieres una instalación global, `npm install -g vtex-io-mcp` y usa `vtex-io-mcp` como comando.
 
-El servidor está listado en el [Official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.zeluizr/vtex-io-mcp) como `io.github.zeluizr/vtex-io-mcp`.
+El servidor está listado en el [Official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.zeluizr%2Fvtex-io-mcp/versions/latest) como `io.github.zeluizr/vtex-io-mcp`.
 
 ## Uso
 

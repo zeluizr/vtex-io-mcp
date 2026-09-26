@@ -9,7 +9,7 @@ y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
 ### Añadido
 - El paquete declara `mcpName` (`io.github.zeluizr/vtex-io-mcp`) y se publica también en el
-  [Official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.zeluizr/vtex-io-mcp),
+  [Official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.zeluizr%2Fvtex-io-mcp/versions/latest),
   de donde lo toman Smithery, PulseMCP y otros directorios. Nuevo `server.json` con el
   esquema oficial; el workflow de publicación lo valida, sincroniza su versión con la del tag
   y lo publica con `mcp-publisher` autenticado por OIDC de GitHub Actions, sin token en secrets.
